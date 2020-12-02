@@ -46,5 +46,7 @@ public class PetsAndPeople {
         // Call mrHernandez's methods to take care of pets' needs
         mrHernandez.walk(dog1, 0.7f);
         mrHernandez.feed(dog2, 0.3f);
+
+        System.out.println("Bye!"); // -Ethan F
     }
 }
