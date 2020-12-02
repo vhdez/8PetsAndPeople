@@ -48,5 +48,22 @@ public class PetsAndPeople {
         mrHernandez.feed(dog2, 0.3f);
 
         System.out.println("Bye!"); // -Ethan F
+
+        Owner Roman = new Owner();
+        Roman.name = "Aidan";
+        Roman.dogFood = 20;
+        Roman.freeTime = 3.00f;
+        Roman.money = 100;
+
+        Bear Bear = new Bear();
+        // Assign values to all of this Dog object's fields
+        Bear.name = "Big ol thiccy";
+        Bear.age = 4;
+        Bear.breed = "Black bear";
+        Bear.energy = 1.0f;
+        Bear.hunger = 3.0f;
+        Bear.owner = mrHernandez;
+        // Notice that we couldn't assign a value to this field until this Dog object was constructed
+        Roman.pet3 = Bear;
     }
 }

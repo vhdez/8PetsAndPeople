@@ -11,6 +11,7 @@ public class Owner {
     float money;
     Dog pet1;
     Dog pet2;
+    Bear pet3;
 
     // METHODS (what all pet owners do)
     void announce() {
@@ -33,6 +34,13 @@ public class Owner {
             // Call pet2's method since the Dog class knows how to announce itself
             pet2.announce();
         }
+        if (pet2 != null) {
+            System.out.println("");
+            System.out.println(name + "'s bear :");
+            // Call pet2's method since the Dog class knows how to announce itself
+            pet2.announce();
+        }
+
         System.out.println("");
     }
 
