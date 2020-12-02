@@ -34,11 +34,11 @@ public class Owner {
             // Call pet2's method since the Dog class knows how to announce itself
             pet2.announce();
         }
-        if (pet2 != null) {
+        if (pet3 != null) {
             System.out.println("");
             System.out.println(name + "'s bear :");
             // Call pet2's method since the Dog class knows how to announce itself
-            pet2.announce();
+            pet3.announce();
         }
 
         System.out.println("");
