@@ -47,6 +47,28 @@ public class PetsAndPeople {
         mrHernandez.walk(dog1, 0.7f);
         mrHernandez.feed(dog2, 0.3f);
 
+
+        //making Matthew's person
+        Owner Matthew = new Owner();
+        Matthew.name = "Madeleine Butterfly";
+        Matthew.dogFood = 10;
+        Matthew.freeTime = 4.0f;
+        Matthew.money = 5;
+        //Matthew's dog
+        Dog dogMN = new Dog();
+        dogMN.name = "Barko Diaz";
+        dogMN.age = 21;
+        dogMN.breed = "laser puppy";
+        dogMN.energy = 10f;
+        dogMN.hunger = .5f;
+        dogMN.owner = Matthew;
+        Matthew.pet1 = dogMN;
+
+        //MN & dog interacting
+        Matthew.announce();
+        Matthew.walk(dogMN, 3.5f);
+        Matthew.feed(dogMN,5f);
+
         System.out.println("Bye!"); // -Ethan F
     }
 }
