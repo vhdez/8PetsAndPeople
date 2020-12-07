@@ -90,6 +90,36 @@ public class PetsAndPeople {
         Fudayl.walk(dog1, 0.7f);
         Fudayl.feed(dog2, 0.3f);
 
+        Owner Jacob = new Owner();
+        Jacob.name = "Jacob";
+        Jacob.dogFood = 2.0f;
+        Jacob.freeTime = 5f;
+        Jacob.money = 99999999;
+        Dog Toby = new Dog();
+        Jacob.pet1 = Toby;
+        Toby.name = "Toby";
+        Toby.energy = 2.0f;
+        Toby.hunger = 0.0f;
+        Toby.age = 9;
+        Toby.breed = "Shih Tzu";
+        Toby.owner = Jacob;
+
+        Jacob.announce();
+        Jacob.walk(Toby, 5.0f);
+        Jacob.feed(Toby, 5f);
+
+        KomodoDragon Ajax = new KomodoDragon();
+        Jacob.pet4 = Ajax;
+        Ajax.name = "Ajax";
+        Ajax.attention = 3.0f;
+        Ajax.hunger = 1.0f;
+        Ajax.age = 2;
+        Ajax.breed = "Komodo Dragon";
+        Ajax.owner = Jacob;
+
+        Jacob.announce();
+        Jacob.pet(Ajax, 5.0f);
+        Jacob.feed(Ajax, 5f);
         System.out.println("Bye!"); // -Ethan F
 
         //making Aidan's person
@@ -127,7 +157,7 @@ public class PetsAndPeople {
         Dog rupertDog = new Dog();
         rupertDog.name = "Rupert";
         rupertDog.age = 4;
-        rupertDog.breed = "Corgi";
+        rupertDog.breed = "Corgi" ;
         rupertDog.energy = 2.1f;
         rupertDog.hunger = 0.5f;
         rupertDog.owner = EthanC;
