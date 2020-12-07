@@ -93,5 +93,11 @@ public class PetsAndPeople {
         EthanC.walk(rupertDog, 1.1f);
         EthanC.feed(rupertDog, 1f);
 
+
+        // Tashon's person
+        Owner Tashon = new Owner();
+        Tashon.name = "Tashon";
+        Tashon.dogFood = 13;
+
     }
 }
