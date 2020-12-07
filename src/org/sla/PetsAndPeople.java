@@ -71,6 +71,29 @@ public class PetsAndPeople {
 
         System.out.println("Bye!"); // -Ethan F
 
+        Owner EthanC = new Owner();
+
+        EthanC.name = "Ethan Chen";
+
+        EthanC.dogFood = 20;
+        EthanC.freeTime = 3.75f;
+        EthanC.money = 100;
+
+        Dog rupertDog = new Dog();
+        rupertDog.name = "Rupert";
+        rupertDog.age = 4;
+        rupertDog.breed = "Corgi";
+        rupertDog.energy = 2.1f;
+        rupertDog.hunger = 0.5f;
+        rupertDog.owner = EthanC;
+        EthanC.pet1 = rupertDog;
+
+        EthanC.announce();
+
+        EthanC.walk(rupertDog, 1.1f);
+        EthanC.feed(rupertDog, 1f);
+
+
         // Tashon's person
         Owner Tashon = new Owner();
         Tashon.name = "Tashon";
