@@ -119,6 +119,10 @@ public class PetsAndPeople {
         Owner Tashon = new Owner();
         Tashon.name = "Tashon";
         Tashon.dogFood = 13;
+        Tashon.freeTime = 2.0f;
+        Tashon.money = 8;
+        // Tashon's Dog
+
 
     }
 }
