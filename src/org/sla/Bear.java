@@ -10,7 +10,7 @@ public class Bear {
 
     // METHODS (what all dogs do)
     void announce() {
-        System.out.print("Yo! wassup it's ya boi " + name +".  I'm a whole " + age + " I'm like " + breed + " years old.  ");
+        System.out.print("Yo! wassup it's ya boi " + name +".  I'm a whole " + breed + " I'm like  " + age + " years old.  ");
         // Notice that dog can get owner's name from the Owner object's field
         System.out.println("My owner is " + owner.name + ".");
         if (energy > 1.0) {
@@ -37,7 +37,7 @@ public class Bear {
         if (energy > 1.0) {
             System.out.println(name + " says: Yo im not done here!  I gotta find a fish or somthing!");
         } else {
-            System.out.println(name + " says: Ready for winter!");
+            System.out.println(name + " says: im gonna take that hibernation nap now");
         }
     }
 }

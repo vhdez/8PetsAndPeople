@@ -77,15 +77,19 @@ public class PetsAndPeople {
         Roman.freeTime = 3.00f;
         Roman.money = 100;
 
-        Bear Bear = new Bear();
+        Bear myBear = new Bear();
         // Assign values to all of this Dog object's fields
-        Bear.name = "Big ol thiccy";
-        Bear.age = 4;
-        Bear.breed = "Black bear";
-        Bear.energy = 1.0f;
-        Bear.hunger = 3.0f;
-        Bear.owner = mrHernandez;
+        myBear.name = "Big ol thiccy";
+        myBear.age = 4;
+        myBear.breed = "Black bear";
+        myBear.energy = 1.0f;
+        myBear.hunger = 3.0f;
+        myBear.owner = Roman;
         // Notice that we couldn't assign a value to this field until this Dog object was constructed
-        Roman.pet3 = Bear;
+        Roman.pet3 = myBear;
+
+        Roman.announce();
+        Roman.walk(myBear,2.0f);
+        Roman.feed(myBear, 6f);
     }
 }
