@@ -99,5 +99,21 @@ public class PetsAndPeople {
         Tashon.name = "Tashon";
         Tashon.dogFood = 13;
 
+
+        //Cia's Person
+        Owner Alycia = new Owner();
+        Alycia.name = "Jensen";
+        Alycia.catFood = 15;
+        Alycia.freeTime = 5.0f;
+        Alycia.money = 20;
+        //Cia's cat
+        Cat catAK = new Cat();
+        catAK.name = "Bucky";
+        catAK.age = 2;
+        catAK.breed = "Japanese Bobtail";
+        catAK.energy = 10f;
+        catAK.hunger = .7f;
+        catAK.owner = Alycia;
+        Alycia.pet1 = catAK;
     }
 }
