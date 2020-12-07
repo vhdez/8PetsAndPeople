@@ -122,7 +122,14 @@ public class PetsAndPeople {
         Tashon.freeTime = 2.0f;
         Tashon.money = 8;
         // Tashon's Dog
-
+        Dog mambaDog = new Dog();
+        mambaDog.name = "Mamba";
+        mambaDog.age = 2;
+        mambaDog.breed = "Alaskan Klee Kai";
+        mambaDog.energy = 1.3f;
+        mambaDog.hunger = 8;
+        mambaDog.owner = Tashon;
+        Tashon.pet1 = mambaDog;
 
     }
 }
