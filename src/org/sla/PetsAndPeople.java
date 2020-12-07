@@ -70,5 +70,11 @@ public class PetsAndPeople {
         Matthew.feed(dogMN,5f);
 
         System.out.println("Bye!"); // -Ethan F
+
+        // Tashon's person
+        Owner Tashon = new Owner();
+        Tashon.name = "Tashon";
+        Tashon.dogFood = 13;
+
     }
 }
