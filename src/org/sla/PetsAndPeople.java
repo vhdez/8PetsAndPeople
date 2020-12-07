@@ -4,7 +4,7 @@ package org.sla;
 
 public class PetsAndPeople {
 
-    public static void main(String[] args) {
+    public static void main(String[] args, float v) {
 	    // Mr. Hernandez has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
@@ -30,7 +30,7 @@ public class PetsAndPeople {
         // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
         Dog dog2 = new Dog();
         // Assign values to all of this Dog object's fields
-        dog2.name = "Bowser ";
+        dog2.name = "Bowser";
         dog2.age = 2;
         dog2.breed = "pug";
         dog2.energy = 1.7f;
@@ -59,7 +59,7 @@ public class PetsAndPeople {
         dogMN.name = "Barko Diaz";
         dogMN.age = 21;
         dogMN.breed = "laser puppy";
-        dogMN.energy = 10f;
+
         dogMN.hunger = .5f;
         dogMN.owner = Matthew;
         Matthew.pet1 = dogMN;
@@ -91,6 +91,30 @@ public class PetsAndPeople {
         Fudayl.feed(dog2, 0.3f);
 
         System.out.println("Bye!"); // -Ethan F
+
+        //making Aidan's person
+
+        Owner Roman = new Owner();
+        Roman.name = "Aida n";
+        Roman.dogFood = 60;
+        Roman.freeTime = 4.0f;
+        Roman.money = 1000;
+        //Aidan's bear
+        Bear myBear = new Bear();
+        myBear.name = "Big thiccy";
+        myBear.age = 4;
+        myBear.breed = "Black Bear";
+        myBear.energy = 5.0f;
+        myBear.hunger = 4.0f;
+        myBear.owner = Roman;
+        Roman.pet3 = myBear;
+
+        //Bear and aidan do things
+        Roman.announce();
+        Roman.walk(myBear, 2.5f);
+        Roman.feed(myBear,6f);
+
+        System.out.println("Bye!");
 
         Owner EthanC = new Owner();
 
