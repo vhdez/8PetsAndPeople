@@ -4,7 +4,7 @@ package org.sla;
 
 public class PetsAndPeople {
 
-    public static void main(String[] args, float v) {
+    public static void main(String[] args) {
 	    // Mr. Hernandez has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
@@ -51,8 +51,8 @@ public class PetsAndPeople {
         //making Matthew's person
         Owner Matthew = new Owner();
         Matthew.name = "Madeleine Butterfly";
-        Matthew.dogFood = 10;
-        Matthew.freeTime = 4.0f;
+        Matthew.dogFood = 10f;
+        Matthew.freeTime = 9.0f;
         Matthew.money = 5;
         //Matthew's dog
         Dog dogMN = new Dog();
@@ -63,11 +63,25 @@ public class PetsAndPeople {
         dogMN.hunger = .5f;
         dogMN.owner = Matthew;
         Matthew.pet1 = dogMN;
+        //Matthew's Seabass
+        SeaBass basspro = new SeaBass();
+        basspro.name = "Bass Pro";
+        basspro.owner = Matthew;
+        basspro.age = 1;
+        basspro.energy = 5f;
+        basspro.hunger = 2f;
+        Matthew.pet10 = basspro;
 
-        //MN & dog interacting
+        //MN & pets interacting
         Matthew.announce();
+        dogMN.announce();
+        basspro.announce();
         Matthew.walk(dogMN, 3.5f);
         Matthew.feed(dogMN,5f);
+        Matthew.feed(basspro, 3f);
+        Matthew.watch(basspro, 2f);
+
+
 
         Owner Fudayl = new Owner();
         Fudayl.name = "Fudayl";
