@@ -30,7 +30,7 @@ public class PetsAndPeople {
         // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
         Dog dog2 = new Dog();
         // Assign values to all of this Dog object's fields
-        dog2.name = "Bowser";
+        dog2.name = "Bowser ";
         dog2.age = 2;
         dog2.breed = "pug";
         dog2.energy = 1.7f;
@@ -70,5 +70,34 @@ public class PetsAndPeople {
         Matthew.feed(dogMN,5f);
 
         System.out.println("Bye!"); // -Ethan F
+
+        Owner EthanC = new Owner();
+
+        EthanC.name = "Ethan Chen";
+
+        EthanC.dogFood = 20;
+        EthanC.freeTime = 3.75f;
+        EthanC.money = 100;
+
+        Dog rupertDog = new Dog();
+        rupertDog.name = "Rupert";
+        rupertDog.age = 4;
+        rupertDog.breed = "Corgi";
+        rupertDog.energy = 2.1f;
+        rupertDog.hunger = 0.5f;
+        rupertDog.owner = EthanC;
+        EthanC.pet1 = rupertDog;
+
+        EthanC.announce();
+
+        EthanC.walk(rupertDog, 1.1f);
+        EthanC.feed(rupertDog, 1f);
+
+
+        // Tashon's person
+        Owner Tashon = new Owner();
+        Tashon.name = "Tashon";
+        Tashon.dogFood = 13;
+
     }
 }
