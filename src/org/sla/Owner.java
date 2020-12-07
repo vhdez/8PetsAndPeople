@@ -11,6 +11,7 @@ public class Owner {
     float money;
     Dog pet1;
     Dog pet2;
+    Bear pet3;
 
     // METHODS (what all pet owners do)
     void announce() {
@@ -33,6 +34,13 @@ public class Owner {
             // Call pet2's method since the Dog class knows how to announce itself
             pet2.announce();
         }
+        if (pet3 != null) {
+            System.out.println("");
+            System.out.println(name + "'s bear :");
+            // Call pet3's method since the Dog class knows how to announce itself
+            pet3.announce();
+        }
+
         System.out.println("");
     }
 
@@ -58,6 +66,32 @@ public class Owner {
             dog.eat(foodAmount);
         } else {
             System.out.println("Owner " + name + " can't feed " + dog.name + " " + foodAmount + " ounds.");
+        }
+        System.out.println("");
+    }
+
+    void walk(Bear myBear, float time) {
+        if (time < freeTime) {
+            // Update Owner's field since their free time is being used
+            freeTime = freeTime - time;
+            System.out.println("Owner " + name + " walks " + myBear.name + " for " + time + " hours.");
+            // Call dog's method since the Dog class knows how to exercise
+            myBear.exercise(time);
+        } else {
+            System.out.println("Owner " + name + " doesn't have " + time + "hours to walk " + myBear.name);
+        }
+        System.out.println("");
+    }
+
+    void feed(Bear myBear, float foodAmount) {
+        if (foodAmount < dogFood) {
+            // Update Owner's field since their dog food is being used
+            dogFood = dogFood - foodAmount;
+            System.out.println("Owner " + name + " feeds " + myBear.name + " " + foodAmount + " pounds.");
+            // Call dog's method since the Dog class knows how to eat
+            myBear.eat(foodAmount);
+        } else {
+            System.out.println("Owner " + name + " can't feed " + myBear.name + " " + foodAmount + " pounds.");
         }
         System.out.println("");
     }

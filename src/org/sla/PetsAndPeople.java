@@ -30,7 +30,7 @@ public class PetsAndPeople {
         // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
         Dog dog2 = new Dog();
         // Assign values to all of this Dog object's fields
-        dog2.name = "Bowser";
+        dog2.name = "Bowser ";
         dog2.age = 2;
         dog2.breed = "pug";
         dog2.energy = 1.7f;
