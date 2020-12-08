@@ -165,6 +165,7 @@ public class PetsAndPeople {
         EthanC.name = "Ethan Chen";
 
         EthanC.dogFood = 20;
+        EthanC.seedsForPigeon = 100;
         EthanC.freeTime = 3.75f;
         EthanC.money = 100;
 
@@ -178,9 +179,24 @@ public class PetsAndPeople {
         EthanC.pet1 = rupertDog;
 
         EthanC.announce();
-
         EthanC.walk(rupertDog, 1.1f);
         EthanC.feed(rupertDog, 1f);
+
+        Pigeon myPigeon = new Pigeon();
+        myPigeon.name = "Kevin Gertrude Bartholomew Maximus Leon III Smoo";
+        myPigeon.age = 2;
+        myPigeon.species = "Feral Pigeon";
+        myPigeon.flyTime = 0.2f;
+        myPigeon.hunger = 60f;
+        myPigeon.owner = EthanC;
+        EthanC.pet5 = myPigeon;
+
+        EthanC.announce();
+        EthanC.fly(myPigeon, 2.3f);
+        EthanC.feed(myPigeon, 30f);
+
+
+
 
 
         // Tashon's person

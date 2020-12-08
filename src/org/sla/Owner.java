@@ -7,13 +7,17 @@ public class Owner {
     // FIELDS (the data that describes any pet owner)
     String name;
     float dogFood;
+    float seedsForPigeon;
     float freeTime;
     float money;
     Dog pet1;
     Dog pet2;
     Bear pet3;
     KomodoDragon pet4;
+    Pigeon pet5;
     SeaBass pet10;
+
+
 
     // METHODS (what all pet owners do)
     void announce() {
@@ -41,6 +45,12 @@ public class Owner {
             System.out.println(name + "'s bear :");
             // Call pet3's method since the Dog class knows how to announce itself
             pet3.announce();
+        }
+        if (pet5 != null) {
+            System.out.println("");
+            System.out.println(name + "'s Pigeon :");
+            // Call pet3's method since the Dog class knows how to announce itself
+            pet5.announce();
         }
 
         if (pet10 != null) {
@@ -101,6 +111,29 @@ public class Owner {
             myBear.eat(foodAmount);
         } else {
             System.out.println("Owner " + name + " can't feed " + myBear.name + " " + foodAmount + " pounds.");
+        }
+        System.out.println("");
+    }
+    void fly(Pigeon pigeon, float time) {
+        if (time < freeTime) {
+
+            freeTime = freeTime - time;
+            System.out.println("Owner " + name + " watches " + pigeon.name + " fly for " + time + " hours.");
+
+            pigeon.exercise(time);
+        } else {
+            System.out.println("Owner " + name + " doesn't have " + time + " to supervise " + pigeon.name + "fly time.");
+        }
+        System.out.println("");
+    }
+    void feed(Pigeon pigeon, float seedAmount) {
+        if (seedAmount < seedsForPigeon) {
+
+            seedsForPigeon = seedsForPigeon - seedAmount;
+            System.out.println("Owner " + name + " feeds " + pigeon.name + " " + seedAmount + " grams.");
+            pigeon.eat(seedAmount);
+        } else {
+            System.out.println("Owner " + name + " can't feed " + pigeon.name + " " + seedsForPigeon + " grams.");
         }
         System.out.println("");
     }
