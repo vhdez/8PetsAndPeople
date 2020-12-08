@@ -160,6 +160,7 @@ public class PetsAndPeople {
 
         System.out.println("Bye!");
 
+        // Ethan:
         Owner EthanC = new Owner();
 
         EthanC.name = "Ethan Chen";
@@ -182,6 +183,7 @@ public class PetsAndPeople {
         EthanC.walk(rupertDog, 1.1f);
         EthanC.feed(rupertDog, 1f);
 
+        // Pet Pigeon :D
         Pigeon myPigeon = new Pigeon();
         myPigeon.name = "Kevin Gertrude Bartholomew Maximus Leon III Smoo";
         myPigeon.age = 2;
@@ -194,9 +196,6 @@ public class PetsAndPeople {
         EthanC.announce();
         EthanC.fly(myPigeon, 2.3f);
         EthanC.feed(myPigeon, 30f);
-
-
-
 
 
         // Tashon's person

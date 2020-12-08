@@ -34,7 +34,7 @@ public class Pigeon {
         flyTime = flyTime - time;
         hunger = hunger + time;
         if (flyTime > 2.0) {
-            System.out.println(name + " says: WeeeEeeEee look at my fly!");
+            System.out.println(name + " says: WeeeEeeEee look at me fly!");
         } else {
             System.out.println(name + " says: Aww fly time is over?");
         }
