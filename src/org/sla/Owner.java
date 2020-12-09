@@ -18,6 +18,7 @@ public class Owner {
     Pigeon pet5;
     Cat2 pet6;
     SeaBass pet10;
+    Gator pet11;
 
 
 
@@ -60,6 +61,13 @@ public class Owner {
             System.out.println(name + "'s Komodo Dragon :");
             // Call pet4's method since the Dog class knows how to announce itself
             pet10.announce();
+        }
+
+        if (pet11 !=null) {
+            System.out.println("");
+            System.out.println(name + "'s Gator :");
+            // Call pet11's method since the Dog class knows how to announce itself
+            pet11.announce();
         }
 
         System.out.println("");
@@ -192,4 +200,5 @@ public class Owner {
         }
         System.out.println("");
     }
+
 }
