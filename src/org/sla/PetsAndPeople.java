@@ -249,5 +249,26 @@ public class PetsAndPeople {
         catAK.hunger = .7f;
         catAK.owner = Alycia;
         Alycia.pet1 = catAK;
+
+        //Alonso's Owner
+        Owner Jojo = new Owner();
+        Jojo.name = "Jojo";
+        Jojo.dogFood = 7;
+        Jojo.freeTime = 2.0f;
+        Jojo.money = 14;
+
+        //Alonso's Dog
+        Dog Iggy = new Dog();
+        Iggy.name = "Iggy";
+        Iggy.age = 3;
+        Iggy.breed = "Boston Terrier";
+        Iggy.energy = 2f;
+        Iggy.hunger = 3;
+        Iggy.owner = Jojo;
+        Jojo.pet1 = Iggy;
+
+        //Alonso's Announce
+        Jojo.announce();
+        Jojo.feed(Iggy, 2);
     }
 }
