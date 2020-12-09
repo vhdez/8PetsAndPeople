@@ -10,7 +10,7 @@ public class PetsAndPeople {
         // Construct an Owner object to represent Mr. Hernandez
         Owner mrHernandez = new Owner();
         // Assign values to all of this Owner object's fields
-        mrHernandez.name = "Mr. Hernandez";
+        mrHernandez.name = "Mr. Hernandez the Frustrated";
         mrHernandez.dogFood = 12;
         mrHernandez.freeTime = 1.75f;
         mrHernandez.money = 40;

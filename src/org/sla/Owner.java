@@ -198,9 +198,8 @@ public class Owner {
         } else {
             System.out.println("Owner " + name + " can't feed " + bass.name + " " + foodAmount + " pounds.");
         }
-        System.out.println("");
-    }
 
-    void walk(Gator gator, float)
+        System.out.println("  ");
+    }
 
 }
