@@ -5,12 +5,13 @@ public class SeaBass {
     String name;
     int age;
     Owner owner;
+    WaterBender trainer;
     float energy;
     float hunger;
 
     // METHODS
     void announce() {
-        System.out.print("blub! ");
+        System.out.print("blub! I'm  " + name + ".  ");
         System.out.println("My owner is " + owner.name + ".");
         if (energy > 5.0) {
             System.out.println("splish splash");
@@ -19,6 +20,7 @@ public class SeaBass {
             System.out.println("blub! blub!");
         }
     }
+
 
     void eat(float foodAmount) {
         // Update for eat

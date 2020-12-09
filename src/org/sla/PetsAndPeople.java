@@ -81,6 +81,16 @@ public class PetsAndPeople {
         Matthew.feed(basspro, 3f);
         Matthew.watch(basspro, 2f);
 
+        //making Korra
+        WaterBender Avatar2 = new WaterBender();
+        Avatar2.name = "Korra";
+        Avatar2.freeTime = 16f;
+        Avatar2.water1 = basspro;
+
+        //Korra and SeaBass
+        Avatar2.announce();
+        Avatar2.train(basspro, 10f);
+
 
 
         Owner Fudayl = new Owner();
