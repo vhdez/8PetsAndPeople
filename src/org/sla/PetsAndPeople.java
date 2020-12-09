@@ -214,5 +214,9 @@ public class PetsAndPeople {
         mambaDog.owner = Tashon;
         Tashon.pet1 = mambaDog;
 
+        Tashon.announce();
+        Tashon.walk(mambaDog,2.3f);
+        Tashon.feed(mambaDog, 8);
+
     }
 }
