@@ -63,6 +63,7 @@ public class Owner {
         System.out.println("");
     }
 
+
     void walk(Dog dog, float time) {
         if (time < freeTime) {
             // Update Owner's field since their free time is being used

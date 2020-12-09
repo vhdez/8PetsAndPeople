@@ -214,5 +214,26 @@ public class PetsAndPeople {
         mambaDog.owner = Tashon;
         Tashon.pet1 = mambaDog;
 
+
+        // Alonso's Person
+        Owner JoJo = new Owner();
+        JoJo.name = "JoJo";
+        JoJo.dogFood = 7;
+        JoJo.freeTime = 2.0f;
+        JoJo.money = 14;
+
+        // Alonso's Dog (pet1)
+        Dog Iggy = new Dog();
+        Iggy.name = "Iggy";
+        Iggy.age = 3;
+        Iggy.breed = "Boston Terrier";
+        Iggy.energy = 1.0f;
+        Iggy.hunger = 10;
+        Iggy.owner = JoJo;
+        JoJo.pet1 = Iggy;
+
+        // Alonso's Announce
+        JoJo.announce();
+        JoJo.feed(rupertDog, 2f);
     }
 }
