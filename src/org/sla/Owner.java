@@ -201,4 +201,6 @@ public class Owner {
         System.out.println("");
     }
 
+    void walk(Gator gator, float)
+
 }
