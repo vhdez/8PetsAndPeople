@@ -4,7 +4,7 @@ package org.sla;
 
 public class PetsAndPeople {
 
-    public static void main(String[] args, float v) {
+    public static void main(String[] args) {
 	    // Mr. Hernandez has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
@@ -108,18 +108,23 @@ public class PetsAndPeople {
         Jacob.walk(Toby, 5.0f);
         Jacob.feed(Toby, 5f);
 
-        KomodoDragon Ajax = new KomodoDragon();
-        Jacob.pet4 = Ajax;
-        Ajax.name = "Ajax";
-        Ajax.attention = 3.0f;
-        Ajax.hunger = 1.0f;
-        Ajax.age = 2;
-        Ajax.breed = "Komodo Dragon";
-        Ajax.owner = Jacob;
+        KomodoDragon dragon = new KomodoDragon();
+        dragon.name = "Ajax";
+        dragon.attention = 3.0f;
+        dragon.hunger = 1.0f;
+        dragon.age = 2;
+        dragon.breed = "Komodo Dragon";
+        dragon.owner = Jacob;
 
-        Jacob.announce();
-        Jacob.pet(Ajax, 5.0f);
-        Jacob.feed(Ajax, 5f);
+        DragonTamer Kevin = new DragonTamer();
+        Kevin.name = "Kevin";
+        Kevin.Meat = 2.0f;
+        Kevin.freeTime = 8f;
+        Kevin.money = 9999999;
+
+        Kevin.announce();
+        Kevin.tame(dragon, 5.0f);
+        Kevin.feed(dragon, 5f);
         System.out.println("Bye!"); // -Ethan F
 
         //making Aidan's person
