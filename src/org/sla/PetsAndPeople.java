@@ -269,6 +269,7 @@ public class PetsAndPeople {
         Owner Jojo = new Owner();
         Jojo.name = "Jojo";
         Jojo.dogFood = 7;
+        Jojo.turtleFood = 10;
         Jojo.freeTime = 2.0f;
         Jojo.money = 14;
 
@@ -294,7 +295,7 @@ public class PetsAndPeople {
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
-        Jojo.feed(Pol, 2);
+        Jojo.feed(Pol, 3);
 
         Alycia.pet6 = catAK;
         // Niyat has 2 dogs!
