@@ -275,5 +275,47 @@ public class PetsAndPeople {
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
+        Alycia.pet6 = catAK;
+        // Niyat has 2 dogs!
+        // FIRST: Assign values to FIELDS
+        // Construct an Owner object to represent Mr. Hernandez
+        Owner Niyat = new Owner();
+        // Assign values to all of this Owner object's fields
+        Niyat.name = "Niyat";
+        Niyat.dogFood = 10;
+        Niyat.freeTime = 2f;
+        Niyat.money = 40;
+
+        Dog pet1 = new Dog();
+        // Assign values to all of this Dog object's fields
+        pet1.name = "Alex";
+        pet1.age = 1;
+        pet1.breed = "pomeranian";
+        pet1.energy = 4f;
+        pet1.hunger = 1f;
+        pet1.owner = Niyat;
+        // Notice that we couldn't assign a value to this field until this Dog object was constructed
+        Niyat.pet1 = dog1;
+
+        // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
+        Dog pet2 = new Dog();
+        // Assign values to all of this Dog object's fields
+        pet2.name = "Cristina";
+        pet2.age = 1;
+        pet2.breed = "pomeranian";
+        pet2.energy = 4f;
+        pet2.hunger = 2f;
+        pet2.owner = Niyat;
+        // Notice that we couldn't assign a value to this field until this Dog object was constructed
+        Niyat.pet2 = dog2;
+
+        // SECOND: Call methods since objects are now ready to use
+        // Call Niyat's method to introduce everyone
+        Niyat.announce();
+
+        // Call Niyat's methods to take care of pets' needs
+        Niyat.walk(dog1, 1f);
+        Niyat.feed(dog2, 2f);
+
     }
 }
