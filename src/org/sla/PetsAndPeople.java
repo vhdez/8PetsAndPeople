@@ -158,6 +158,21 @@ public class PetsAndPeople {
         Roman.walk(myBear, 2.5f);
         Roman.feed(myBear,6f);
 
+        Dog dogAR = new Dog();
+        dogAR.name = "Snoop";
+        dogAR.age= 5;
+        dogAR.breed= "Russian Bear hunting Dog";
+        dogAR.energy= 1f;
+        dogAR.hunger=2f;
+        dogAR.owner= Roman;
+
+
+        Roman.announce();
+
+
+        Roman.walk(dogAR, 0.7f);
+        Roman.feed(dogAR, 0.3f);
+
         System.out.println("Bye!");
 
         // Ethan:
