@@ -241,14 +241,14 @@ public class PetsAndPeople {
         Alycia.freeTime = 5.0f;
         Alycia.money = 20;
         //Cia's cat
-        Cat catAK = new Cat();
+        Cat2 catAK = new Cat2();
         catAK.name = "Bucky";
         catAK.age = 2;
         catAK.breed = "Japanese Bobtail";
         catAK.energy = 10f;
         catAK.hunger = .7f;
         catAK.owner = Alycia;
-        Alycia.pet1 = catAK;
+        Alycia.pet6 = catAK;
 
         //Alonso's Owner
         Owner Jojo = new Owner();

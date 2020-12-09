@@ -7,6 +7,7 @@ public class Owner {
     // FIELDS (the data that describes any pet owner)
     String name;
     float dogFood;
+    float catFood;
     float seedsForPigeon;
     float freeTime;
     float money;
@@ -15,6 +16,7 @@ public class Owner {
     Bear pet3;
     KomodoDragon pet4;
     Pigeon pet5;
+    Cat2 pet6;
     SeaBass pet10;
 
 
