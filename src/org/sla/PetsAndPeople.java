@@ -101,8 +101,8 @@ public class PetsAndPeople {
         Fudayl.announce();
 
 
-        Fudayl.walk(dog1, 0.7f);
-        Fudayl.feed(dog2, 0.3f);
+        Fudayl.walk(dogfh, 0.7f);
+        Fudayl.feed(dogfh, 0.3f);
 
         Owner Jacob = new Owner();
         Jacob.name = "Jacob";
