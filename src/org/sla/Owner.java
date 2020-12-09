@@ -9,7 +9,6 @@ public class Owner {
     float dogFood;
     float catFood;
     float seedsForPigeon;
-    float turtleFood;
     float freeTime;
     float money;
     Dog pet1;
@@ -19,7 +18,7 @@ public class Owner {
     Pigeon pet5;
     Cat2 pet6;
     SeaBass pet10;
-    Turtles pet20;
+    Gator pet11;
 
 
 
@@ -64,10 +63,11 @@ public class Owner {
             pet10.announce();
         }
 
-        if (pet20 != null) {
+        if (pet11 !=null) {
             System.out.println("");
-            System.out.println(name + "'s GLORIOUS Turtle :");
-            pet20.announce();
+            System.out.println(name + "'s Gator :");
+            // Call pet11's method since the Dog class knows how to announce itself
+            pet11.announce();
         }
 
         System.out.println("");
@@ -197,19 +197,6 @@ public class Owner {
             bass.eat(foodAmount);
         } else {
             System.out.println("Owner " + name + " can't feed " + bass.name + " " + foodAmount + " pounds.");
-        }
-        System.out.println("");
-    }
-
-    void feed(Turtles turtles, float foodAmount) {
-        if (foodAmount < turtleFood) {
-            // Update Owner's field since their dog food is being used
-            foodAmount = foodAmount - turtleFood;
-            System.out.println("Owner " + name + " feeds " + turtles.name + " " + turtleFood + " pounds.");
-            // Call dog's method since the Dog class knows how to eat
-            turtles.eat(turtleFood);
-        } else {
-            System.out.println("Owner " + name + " can't feed " + turtles.name + " " + turtleFood + " pounds.");
         }
         System.out.println("");
     }
