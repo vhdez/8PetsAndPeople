@@ -7,12 +7,19 @@ public class Owner {
     // FIELDS (the data that describes any pet owner)
     String name;
     float dogFood;
+    float catFood;
+    float seedsForPigeon;
     float freeTime;
     float money;
     Dog pet1;
     Dog pet2;
     Bear pet3;
     KomodoDragon pet4;
+    Pigeon pet5;
+    Cat2 pet6;
+    SeaBass pet10;
+
+
 
     // METHODS (what all pet owners do)
     void announce() {
@@ -41,16 +48,23 @@ public class Owner {
             // Call pet3's method since the Dog class knows how to announce itself
             pet3.announce();
         }
+        if (pet5 != null) {
+            System.out.println("");
+            System.out.println(name + "'s Pigeon :");
+            // Call pet3's method since the Dog class knows how to announce itself
+            pet5.announce();
+        }
 
-        if (pet4 != null) {
+        if (pet10 != null) {
             System.out.println("");
             System.out.println(name + "'s Komodo Dragon :");
             // Call pet4's method since the Dog class knows how to announce itself
-            pet4.announce();
+            pet10.announce();
         }
 
         System.out.println("");
     }
+
 
     void walk(Dog dog, float time) {
         if (time < freeTime) {
@@ -103,6 +117,29 @@ public class Owner {
         }
         System.out.println("");
     }
+    void fly(Pigeon pigeon, float time) {
+        if (time < freeTime) {
+
+            freeTime = freeTime - time;
+            System.out.println("Owner " + name + " watches " + pigeon.name + " fly for " + time + " hours.");
+
+            pigeon.exercise(time);
+        } else {
+            System.out.println("Owner " + name + " doesn't have " + time + " to supervise " + pigeon.name + "fly time.");
+        }
+        System.out.println("");
+    }
+    void feed(Pigeon pigeon, float seedAmount) {
+        if (seedAmount < seedsForPigeon) {
+
+            seedsForPigeon = seedsForPigeon - seedAmount;
+            System.out.println("Owner " + name + " feeds " + pigeon.name + " " + seedAmount + " grams.");
+            pigeon.eat(seedAmount);
+        } else {
+            System.out.println("Owner " + name + " can't feed " + pigeon.name + " " + seedsForPigeon + " grams.");
+        }
+        System.out.println("");
+    }
 
     void pet(KomodoDragon dragon, float time) {
         if (time < freeTime) {
@@ -126,6 +163,32 @@ public class Owner {
             dragon.eat(foodAmount);
         } else {
             System.out.println("Owner " + name + " can't feed " + dragon.name + " " + foodAmount + " pounds.");
+        }
+        System.out.println("");
+    }
+
+    void watch(SeaBass bass, float time) {
+        if (time < freeTime) {
+            // Update Owner's field since their free time is being used
+            freeTime = freeTime - time;
+            System.out.println("Owner " + name + " walks " + bass.name + " for " + time + " hours.");
+            // Call dog's method since the Dog class knows how to exercise
+            bass.swim(time);
+        } else {
+            System.out.println("Owner " + name + " doesn't have " + time + "hours to walk " + bass.name);
+        }
+        System.out.println("");
+    }
+
+    void feed(SeaBass bass, float foodAmount) {
+        if (foodAmount < dogFood) {
+            // Update Owner's field since their dog food is being used
+            dogFood = dogFood - foodAmount;
+            System.out.println("Owner " + name + " feeds " + bass.name + " " + foodAmount + " pounds.");
+            // Call dog's method since the Dog class knows how to eat
+            bass.eat(foodAmount);
+        } else {
+            System.out.println("Owner " + name + " can't feed " + bass.name + " " + foodAmount + " pounds.");
         }
         System.out.println("");
     }

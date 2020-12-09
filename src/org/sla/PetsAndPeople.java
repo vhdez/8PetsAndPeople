@@ -51,8 +51,8 @@ public class PetsAndPeople {
         //making Matthew's person
         Owner Matthew = new Owner();
         Matthew.name = "Madeleine Butterfly";
-        Matthew.dogFood = 10;
-        Matthew.freeTime = 4.0f;
+        Matthew.dogFood = 10f;
+        Matthew.freeTime = 9.0f;
         Matthew.money = 5;
         //Matthew's dog
         Dog dogMN = new Dog();
@@ -63,11 +63,25 @@ public class PetsAndPeople {
         dogMN.hunger = .5f;
         dogMN.owner = Matthew;
         Matthew.pet1 = dogMN;
+        //Matthew's Seabass
+        SeaBass basspro = new SeaBass();
+        basspro.name = "Bass Pro";
+        basspro.owner = Matthew;
+        basspro.age = 1;
+        basspro.energy = 5f;
+        basspro.hunger = 2f;
+        Matthew.pet10 = basspro;
 
-        //MN & dog interacting
+        //MN & pets interacting
         Matthew.announce();
+        dogMN.announce();
+        basspro.announce();
         Matthew.walk(dogMN, 3.5f);
         Matthew.feed(dogMN,5f);
+        Matthew.feed(basspro, 3f);
+        Matthew.watch(basspro, 2f);
+
+
 
         Owner Fudayl = new Owner();
         Fudayl.name = "Fudayl";
@@ -87,8 +101,8 @@ public class PetsAndPeople {
         Fudayl.announce();
 
 
-        Fudayl.walk(dog1, 0.7f);
-        Fudayl.feed(dog2, 0.3f);
+        Fudayl.walk(dogfh, 0.7f);
+        Fudayl.feed(dogfh, 0.3f);
 
         Owner Jacob = new Owner();
         Jacob.name = "Jacob";
@@ -149,13 +163,30 @@ public class PetsAndPeople {
         Roman.walk(myBear, 2.5f);
         Roman.feed(myBear,6f);
 
+        Dog dogAR = new Dog();
+        dogAR.name = "Snoop";
+        dogAR.age= 5;
+        dogAR.breed= "Russian Bear hunting Dog";
+        dogAR.energy= 1f;
+        dogAR.hunger=2f;
+        dogAR.owner= Roman;
+
+
+        Roman.announce();
+
+
+        Roman.walk(dogAR, 0.7f);
+        Roman.feed(dogAR, 0.3f);
+
         System.out.println("Bye!");
 
+        // Ethan:
         Owner EthanC = new Owner();
 
         EthanC.name = "Ethan Chen";
 
         EthanC.dogFood = 20;
+        EthanC.seedsForPigeon = 100;
         EthanC.freeTime = 3.75f;
         EthanC.money = 100;
 
@@ -169,9 +200,22 @@ public class PetsAndPeople {
         EthanC.pet1 = rupertDog;
 
         EthanC.announce();
-
         EthanC.walk(rupertDog, 1.1f);
         EthanC.feed(rupertDog, 1f);
+
+        // Pet Pigeon :D
+        Pigeon myPigeon = new Pigeon();
+        myPigeon.name = "Kevin Gertrude Bartholomew Maximus Leon III Smoo";
+        myPigeon.age = 2;
+        myPigeon.species = "Feral Pigeon";
+        myPigeon.flyTime = 0.2f;
+        myPigeon.hunger = 60f;
+        myPigeon.owner = EthanC;
+        EthanC.pet5 = myPigeon;
+
+        EthanC.announce();
+        EthanC.fly(myPigeon, 2.3f);
+        EthanC.feed(myPigeon, 30f);
 
 
         // Tashon's person
@@ -190,5 +234,46 @@ public class PetsAndPeople {
         mambaDog.owner = Tashon;
         Tashon.pet1 = mambaDog;
 
+        Tashon.announce();
+        Tashon.walk(mambaDog,2.3f);
+        Tashon.feed(mambaDog, 8);
+
+
+        //Cia's Person
+        Owner Alycia = new Owner();
+        Alycia.name = "Jensen";
+        Alycia.catFood = 15;
+        Alycia.freeTime = 5.0f;
+        Alycia.money = 20;
+        //Cia's cat
+        Cat2 catAK = new Cat2();
+        catAK.name = "Bucky";
+        catAK.age = 2;
+        catAK.breed = "Japanese Bobtail";
+        catAK.energy = 10f;
+        catAK.hunger = .7f;
+        catAK.owner = Alycia;
+        Alycia.pet6 = catAK;
+
+        //Alonso's Owner
+        Owner Jojo = new Owner();
+        Jojo.name = "Jojo";
+        Jojo.dogFood = 7;
+        Jojo.freeTime = 2.0f;
+        Jojo.money = 14;
+
+        //Alonso's Dog
+        Dog Iggy = new Dog();
+        Iggy.name = "Iggy";
+        Iggy.age = 3;
+        Iggy.breed = "Boston Terrier";
+        Iggy.energy = 2f;
+        Iggy.hunger = 3;
+        Iggy.owner = Jojo;
+        Jojo.pet1 = Iggy;
+
+        //Alonso's Announce
+        Jojo.announce();
+        Jojo.feed(Iggy, 2);
     }
 }
