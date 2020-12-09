@@ -272,9 +272,20 @@ public class PetsAndPeople {
         Iggy.owner = Jojo;
         Jojo.pet1 = Iggy;
 
+        //Alonso's Turtle
+        Turtles Pol = new Turtles();
+        Pol.name = "Iggy";
+        Pol.age = 3;
+        Pol.energy = 2f;
+        Pol.hunger = 3;
+        Pol.owner = Jojo;
+        Jojo.pet20 = Pol;
+
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
+        Jojo.feed(Pol, 2);
+
         Alycia.pet6 = catAK;
         // Niyat has 2 dogs!
         // FIRST: Assign values to FIELDS

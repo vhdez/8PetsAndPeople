@@ -9,6 +9,7 @@ public class Owner {
     float dogFood;
     float catFood;
     float seedsForPigeon;
+    float turtleFood;
     float freeTime;
     float money;
     Dog pet1;
@@ -19,6 +20,7 @@ public class Owner {
     Cat2 pet6;
     SeaBass pet10;
     Gator pet11;
+    Turtles pet20;
 
 
 
@@ -201,6 +203,18 @@ public class Owner {
         System.out.println("");
     }
 
-    void walk(Gator gator, float)
+    void feed(Turtles turtles, float foodAmount) {
+        if (foodAmount < turtleFood) {
+
+            turtleFood = turtleFood - foodAmount;
+            System.out.println("Owner " + name + " feeds " + turtles.name + " " + foodAmount + " grams.");
+            turtles.eat(foodAmount);
+        } else {
+            System.out.println("Owner " + name + " can't feed " + turtles.name + " " + foodAmount + " grams.");
+        }
+        System.out.println("");
+    }
+
+    //void walk(Gator gator, float)
 
 }
