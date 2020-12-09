@@ -15,6 +15,7 @@ public class PetsAndPeople {
         mrHernandez.freeTime = 1.75f;
         mrHernandez.money = 40;
 
+
         // Construct a Dog object to represent Mr. Hernandez's first pet Rufus
         Dog dog1 = new Dog();
         // Assign values to all of this Dog object's fields
@@ -47,6 +48,34 @@ public class PetsAndPeople {
         mrHernandez.walk(dog1, 0.7f);
         mrHernandez.feed(dog2, 0.3f);
 
+        Child Bella = new Child();
+        Bella.name = "Bella";
+        Bella.age = 10;
+        Bella.homeworkHours = 2f;
+        Bella.freeTime = 5f;
+
+
+        Dog apolloDog = new Dog();
+        // Assign values to all of this Dog object's fields
+        apolloDog.name = "Apollo";
+        apolloDog.age = 7;
+        apolloDog.breed = "Husky";
+        apolloDog.energy = 3.2f;
+        apolloDog.hunger = 0.1f;
+        Bella.dog = apolloDog;
+
+        Pigeon charliePigeon = new Pigeon();
+        charliePigeon.name = "Charlie";
+        charliePigeon.age = 2;
+        charliePigeon.species = "Feral Pigeon";
+        charliePigeon.flyTime = 0.2f;
+        charliePigeon.hunger = 10f;
+        Bella.pigeon = charliePigeon;
+
+        Bella.announce();
+        Bella.sleep(Bella, 6f);
+        Bella.walk(apolloDog, 2f, 30);
+        Bella.fly(charliePigeon, 2.3f, 10);
 
         //making Matthew's person
         Owner Matthew = new Owner();

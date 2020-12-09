@@ -12,11 +12,13 @@ public class Dog {
     float energy;
     float hunger;
 
+
+
     // METHODS (what all dogs do)
     void announce() {
         System.out.print("Woof!  I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
         // Notice that dog can get owner's name from the Owner object's field
-        System.out.println("My owner is " + owner.name + ".");
+       // System.out.println("My owner is " + owner.name + ".");
         if (energy > 2.0) {
             System.out.println("Aaargh!  Walk me NOW!");
         }
@@ -24,6 +26,7 @@ public class Dog {
             System.out.println("Growl!  Feed me please!");
         }
     }
+
 
     void eat(float foodAmount) {
         // Update Dog object's fields since both are affected by eating

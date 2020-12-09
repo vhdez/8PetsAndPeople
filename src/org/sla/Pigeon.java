@@ -7,17 +7,20 @@ public class Pigeon {
     Owner owner;
     float flyTime;
     float hunger;
+    Child child;
+
 
     void announce() {
         System.out.print("Coo! I am " + name + ".  I am a " + species  + ". I am " + age + " years old.");
-        System.out.println(" My owner is " + owner.name + ".");
+//        System.out.println(" My owner is " + owner.name + ".");
         if (flyTime < 2.0) {
             System.out.println("COO COO! Let me out I need to fly");
         }
-        if (hunger > 2.0) {
+        if (hunger > 50) {
             System.out.println("COO COO! I am hungry! Feed me some seeds!");
         }
     }
+
 
     void eat(float seedAmount) {
 
