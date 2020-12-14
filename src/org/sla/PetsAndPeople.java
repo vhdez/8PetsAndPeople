@@ -126,13 +126,7 @@ public class PetsAndPeople {
 
         Fudayl.name = "Fudayl";
 
-        Cat cathf = new Cat();
-        cathf.name = "Kodak";
-        cathf.age=2;
-        cathf.breed= "Black Cat";
-        cathf.energy= 1f;
-        cathf.hunger=2f;
-        cathf.owner= Fudayl;
+        Cat cathf = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
 
 
 

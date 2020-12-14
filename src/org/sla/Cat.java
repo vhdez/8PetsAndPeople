@@ -8,6 +8,14 @@ public class Cat {
     float energy;
     float hunger;
 
+    public Cat(String name, String breed, int age, Owner owner, float energy, float hunger) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
 
     void announce() {
         System.out.print("Hello my name is " + name + ".  I'm " + breed + " I just turned  " + age + " years old.  ");

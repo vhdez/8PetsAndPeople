@@ -21,6 +21,7 @@ public class Owner {
     SeaBass pet10;
     Gator pet11;
     Turtles pet20;
+    Cat pet22;
 
     // CONSTRUCTORS
     Owner() {
@@ -90,7 +91,7 @@ public class Owner {
 
         System.out.println("");
     }
-   Cat pet22;
+
 
     void walk(Pet dog, float time) {
         if (time < freeTime) {
