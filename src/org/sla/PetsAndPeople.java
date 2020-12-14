@@ -5,48 +5,29 @@ package org.sla;
 public class PetsAndPeople {
 
     public static void main(String[] args) {
+        Pet[] allOfThePets = new Pet[200];
+
 	    // Mr. Hernandez has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
-        Owner mrHernandez = new Owner();
-        // Assign values to all of this Owner object's fields
-        mrHernandez.name = "Mr. Hernandez the Frustrated";
-        mrHernandez.dogFood = 12;
-        mrHernandez.freeTime = 1.75f;
-        mrHernandez.money = 40;
-
-
+        Owner mrHernandez = new Owner("Mr. Hernandez the Frustrated", 12, 1.75f, 40);
         // Construct a Dog object to represent Mr. Hernandez's first pet Rufus
-        Dog dog1 = new Dog();
-        // Assign values to all of this Dog object's fields
-        dog1.name = "Rufus";
-        dog1.age = 7;
-        dog1.breed = "dachshund";
-        dog1.energy = 3.2f;
-        dog1.hunger = 0.8f;
-        dog1.owner = mrHernandez;
+        allOfThePets[0] = new Dog("Rufus", "dachshund", 7, mrHernandez, 3.2f, 0.8f);
         // Notice that we couldn't assign a value to this field until this Dog object was constructed
-        mrHernandez.pet1 = dog1;
+        mrHernandez.pet1 = allOfThePets[0];
 
         // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
-        Dog dog2 = new Dog();
-        // Assign values to all of this Dog object's fields
-        dog2.name = "Bowser";
-        dog2.age = 2;
-        dog2.breed = "pug";
-        dog2.energy = 1.7f;
-        dog2.hunger = 2.5f;
-        dog2.owner = mrHernandez;
+        allOfThePets[1] = new Dog("Bowser", "pug", 2, mrHernandez, 1.7f, 2.5f);
         // Notice that we couldn't assign a value to this field until this Dog object was constructed
-        mrHernandez.pet2 = dog2;
+        mrHernandez.pet2 = allOfThePets[1];
 
         // SECOND: Call methods since objects are now ready to use
         // Call mrHernandez's method to introduce everyone
         mrHernandez.announce();
 
         // Call mrHernandez's methods to take care of pets' needs
-        mrHernandez.walk(dog1, 0.7f);
-        mrHernandez.feed(dog2, 0.3f);
+        mrHernandez.walk(allOfThePets[1], 0.7f);
+        mrHernandez.feed(allOfThePets[1], 0.3f);
 
         Child Bella = new Child();
         Bella.name = "Bella";
@@ -168,6 +149,7 @@ public class PetsAndPeople {
         dragon.age = 2;
         dragon.breed = "Komodo Dragon";
         dragon.owner = Jacob;
+        Jacob.pet1 = dragon;
 
         DragonTamer Kevin = new DragonTamer();
         Kevin.name = "Kevin";
@@ -346,7 +328,7 @@ public class PetsAndPeople {
         pet1.hunger = 1f;
         pet1.owner = Niyat;
         // Notice that we couldn't assign a value to this field until this Dog object was constructed
-        Niyat.pet1 = dog1;
+        Niyat.pet1 = pet1;
 
         // Construct a Dog object to represent Mr. Hernandez's second pet Bowser
         Dog pet2 = new Dog();
@@ -358,15 +340,15 @@ public class PetsAndPeople {
         pet2.hunger = 2f;
         pet2.owner = Niyat;
         // Notice that we couldn't assign a value to this field until this Dog object was constructed
-        Niyat.pet2 = dog2;
+        Niyat.pet2 = pet2;
 
         // SECOND: Call methods since objects are now ready to use
         // Call Niyat's method to introduce everyone
         Niyat.announce();
 
         // Call Niyat's methods to take care of pets' needs
-        Niyat.walk(dog1, 1f);
-        Niyat.feed(dog2, 2f);
+        Niyat.walk(pet1, 1f);
+        Niyat.feed(pet2, 2f);
 
     }
 }

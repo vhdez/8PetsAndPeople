@@ -12,17 +12,26 @@ public class Owner {
     float turtleFood;
     float freeTime;
     float money;
-    Dog pet1;
-    Dog pet2;
+    // Object can have multiple classes (poly morphism) subclass/superclass
+    Pet pet1;
+    Pet pet2;
     Bear pet3;
-    KomodoDragon pet4;
     Pigeon pet5;
     Cat2 pet6;
     SeaBass pet10;
     Gator pet11;
     Turtles pet20;
 
+    // CONSTRUCTORS
+    Owner() {
+    }
 
+    Owner(String myName, float realDogFoodAmount, float timeAvailable, float cashMoney) {
+        name = myName;
+        dogFood = realDogFoodAmount;
+        freeTime = timeAvailable;
+        money = cashMoney;
+    }
 
     // METHODS (what all pet owners do)
     void announce() {
@@ -76,7 +85,7 @@ public class Owner {
     }
 
 
-    void walk(Dog dog, float time) {
+    void walk(Pet dog, float time) {
         if (time < freeTime) {
             // Update Owner's field since their free time is being used
             freeTime = freeTime - time;
@@ -89,7 +98,7 @@ public class Owner {
         System.out.println("");
     }
 
-    void feed(Dog dog, float foodAmount) {
+    void feed(Pet dog, float foodAmount) {
         if (foodAmount < dogFood) {
             // Update Owner's field since their dog food is being used
             dogFood = dogFood - foodAmount;

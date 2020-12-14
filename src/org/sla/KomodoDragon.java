@@ -1,19 +1,13 @@
 package org.sla;
 
-public class KomodoDragon {
-    // FIELDS (the data that describes any dog)
-    String name;
-    String breed;
-    int age;
-    Owner owner;
+public class KomodoDragon extends Pet {
+    // FIELDS (the data that describes any komodo dragon)
     float attention;
-    float hunger;
 
     // METHODS (what all dogs do)
     void announce() {
-        System.out.print("Hiss!  I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
-        // Notice that dog can get owner's name from the Owner object's field
-        System.out.println("My owner is " + owner.name + ".");
+        super.announce();
+
         if (attention > 2.0) {
             System.out.println("Aaargh!  Rub my back!");
         }
