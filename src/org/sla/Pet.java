@@ -13,11 +13,11 @@ public class Pet {
 
     // METHODS (what all pets do)
     void announce() {
-        System.out.print("Woof!  I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
+        System.out.print("Attention! I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
         // Notice that dog can get owner's name from the Owner object's field
         // System.out.println("My owner is " + owner.name + ".");
         if (hunger > 2.0) {
-            System.out.println("Growl!  Feed me please!");
+            System.out.println("Notice me!  Feed me please!");
         }
     }
 
