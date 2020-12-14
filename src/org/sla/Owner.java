@@ -81,9 +81,16 @@ public class Owner {
             pet11.announce();
         }
 
+        if (pet22 !=null) {
+            System.out.println("");
+            System.out.println(name + "'s Cat :");
+            // Call pet11's method since the Dog class knows how to announce itself
+            pet22.announce();
+        }
+
         System.out.println("");
     }
-
+   Cat pet22;
 
     void walk(Pet dog, float time) {
         if (time < freeTime) {

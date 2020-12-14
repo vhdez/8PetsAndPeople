@@ -7,7 +7,7 @@ public class Cat {
     Owner owner;
     float energy;
     float hunger;
-    String color;
+
 
     void announce() {
         System.out.print("Hello my name is " + name + ".  I'm " + breed + " I just turned  " + age + " years old.  ");
@@ -19,9 +19,28 @@ public class Cat {
         if (hunger > 3.0) {
             System.out.println("I'm hungry give me some food!");
         }
+    }
+
+    void eat(float foodAmount) {
+        hunger = hunger - foodAmount;
+        energy = energy + foodAmount;
+        if (hunger > 2.0) {
+            System.out.println(name + " says: I'm STILL hungry! Feed ME");
+        } else {
+            System.out.println(name + " says: Thanks! ");
         }
     }
 
+    void exercise(float time) {
+        energy = energy - time;
+        hunger = hunger + time;
+        if (energy > 2.0) {
+            System.out.println(name + " says: Aaargh!  Get the string!");
+        } else {
+            System.out.println(name + " says: Thanks!  I'm ready for a nap.");
+        }
+    }
+}
 
 
 

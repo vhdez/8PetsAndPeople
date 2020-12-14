@@ -124,6 +124,18 @@ public class PetsAndPeople {
         Fudayl.walk(dogfh, 0.7f);
         Fudayl.feed(dogfh, 0.3f);
 
+        Fudayl.name = "Fudayl";
+
+        Cat cathf = new Cat();
+        cathf.name = "Kodak";
+        cathf.age=2;
+        cathf.breed= "Black Cat";
+        cathf.energy= 1f;
+        cathf.hunger=2f;
+        cathf.owner= Fudayl;
+
+
+
         Owner Jacob = new Owner();
         Jacob.name = "Jacob";
         Jacob.dogFood = 2.0f;
