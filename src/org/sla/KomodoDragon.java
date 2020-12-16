@@ -4,6 +4,15 @@ public class KomodoDragon extends Pet {
     // FIELDS (the data that describes any komodo dragon)
     float attention;
 
+    public KomodoDragon(String name, String breed, int age, Owner owner, float attention, float hunger) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.attention = attention;
+        this.hunger = hunger;
+    }
+
     // METHODS (what all dogs do)
     void announce() {
         super.announce();

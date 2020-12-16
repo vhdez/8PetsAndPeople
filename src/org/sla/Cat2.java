@@ -4,6 +4,10 @@ public class Cat2 extends Pet {
     float energy;
 
     //CONSTRUCTORS//
+    Cat2(){
+
+
+    }
     public Cat2(String name, String breed, int age,  Owner owner, float energy, float hunger){
         this.name = name;
         this.breed = breed;

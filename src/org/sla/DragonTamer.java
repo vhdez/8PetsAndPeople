@@ -8,6 +8,14 @@ public class DragonTamer {
     float money;
     KomodoDragon dragon;
 
+    DragonTamer(String name, float Meat, float freeTime, float money ) {
+        this.name = name;
+        this.Meat = Meat;
+        this.freeTime = freeTime;
+        this.money = money;
+    }
+
+
     void announce() {
         System.out.print("Hi!  I'm " + name + ".  ");
         System.out.print("I have " + Meat + " pounds of meat left.  ");

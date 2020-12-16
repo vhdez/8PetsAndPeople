@@ -6,6 +6,10 @@ public class Turtles extends Pet{
 
     float energy;
 
+    Turtles(){
+
+    }
+
     public Turtles(String name, int age, Owner owner, float energy, float hunger) {
         this.name = name;
         this.age = age;
