@@ -24,6 +24,7 @@ public class Dog extends Pet {
 
     // METHODS (what all dogs do)
     void announce() {
+        System.out.print("woof!");
         super.announce();
 
         if (energy > 2.0) {

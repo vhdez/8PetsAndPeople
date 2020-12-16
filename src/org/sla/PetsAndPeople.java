@@ -76,6 +76,7 @@ public class PetsAndPeople {
         //Matthew's Seabass
         SeaBass basspro = new SeaBass();
         basspro.name = "Bass Pro";
+        basspro.breed = "fish";
         basspro.owner = Matthew;
         basspro.age = 1;
         basspro.energy = 5f;
