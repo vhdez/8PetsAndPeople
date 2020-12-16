@@ -1,16 +1,20 @@
 package org.sla;
 
-public class Cat2 {
-    String name;
-    String breed;
-    int age;
-    Owner owner;
+public class Cat2 extends Pet {
     float energy;
-    float hunger;
+
+    //CONSTRUCTORS//
+    public Cat2(String name, String breed, int age,  Owner owner, float energy, float hunger){
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
 
     void announce() {
         System.out.print("Meow. Who am I? Oh yeah, I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
-        // Notice that dog can get owner's name from the Owner object's field
         System.out.println("My owner is " + owner.name + ". I think.");
         if (energy > 2.0) {
             System.out.println("Hithhhh I have a mission! Let me OUT!");
