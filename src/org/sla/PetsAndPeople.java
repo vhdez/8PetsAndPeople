@@ -184,24 +184,14 @@ public class PetsAndPeople {
 
 
         // Tashon's person
-        Owner Tashon = new Owner();
-        Tashon.name = "Tashon";
-        Tashon.dogFood = 13;
-        Tashon.freeTime = 2.0f;
-        Tashon.money = 8;
+        Owner Tashon = new Owner("Tashon", 13,2.0f,8);
         // Tashon's Dog
-        Dog mambaDog = new Dog();
-        mambaDog.name = "Mamba";
-        mambaDog.age = 2;
-        mambaDog.breed = "Alaskan Klee Kai";
-        mambaDog.energy = 1.3f;
-        mambaDog.hunger = 8;
-        mambaDog.owner = Tashon;
-        Tashon.pet1 = mambaDog;
+        allOfThePets[8]= new Dog("Mamba", "Alaskan Klee Kai", 2, Tashon, 1.3f, 8);
+        Tashon.pet1 = allOfThePets[8];
 
         Tashon.announce();
-        Tashon.walk(mambaDog,2.3f);
-        Tashon.feed(mambaDog, 8);
+        Tashon.walk(allOfThePets[8],2.3f);
+        Tashon.feed(allOfThePets[8], 8);
 
 
         //Cia's Person
