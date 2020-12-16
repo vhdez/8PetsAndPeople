@@ -17,7 +17,7 @@ public class Owner {
     Pet pet2;
     Bear pet3;
     Pet pet5;
-    Cat2 pet6;
+    Pet pet6;
     SeaBass pet10;
     Gator pet11;
     Turtles pet20;
