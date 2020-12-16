@@ -16,7 +16,7 @@ public class Owner {
     Pet pet1;
     Pet pet2;
     Bear pet3;
-    Pigeon pet5;
+    Pet pet5;
     Cat2 pet6;
     SeaBass pet10;
     Gator pet11;
@@ -144,7 +144,7 @@ public class Owner {
         }
         System.out.println("");
     }
-    void fly(Pigeon pigeon, float time) {
+    void fly(Pet pigeon, float time) {
         if (time < freeTime) {
 
             freeTime = freeTime - time;

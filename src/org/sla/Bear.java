@@ -1,18 +1,23 @@
 package org.sla;
 
-public class Bear {
-    String name;
-    String breed;
-    int age;
-    Owner owner;
+public class Bear extends Pet {
     float energy;
     float hunger;
 
+
+    public Bear(String name, String breed, int age, Owner owner, float energy, float hunger) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
+
+
     // METHODS (what all dogs do)
     void announce() {
-        System.out.print("Yo! wassup it's ya boi " + name +".  I'm a whole " + breed + " I'm like  " + age + " years old.  ");
-        // Notice that dog can get owner's name from the Owner object's field
-        System.out.println("My owner is " + owner.name + ".");
+       super.announce();
         if (energy > 1.0) {
             System.out.println("Im going to hurt you! let me in the wild!");
         }

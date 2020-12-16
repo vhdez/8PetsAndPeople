@@ -1,18 +1,30 @@
 package org.sla;
 
-public class Pigeon {
-    String name;
+public class Pigeon extends Pet  {
+
     String species;
-    int age;
-    Owner owner;
     float flyTime;
-    float hunger;
     Child child;
 
+// CONSTRUCTORS
+
+    Pigeon() {
+    }
+
+    public Pigeon(String name, int age,  Owner owner,  float hunger, String species, float flyTime, Child child) {
+        this.name = name;
+        this.age = age;
+        this.owner = owner;
+        this.hunger = hunger;
+        this.species = species;
+        this.flyTime = flyTime;
+        this.child = child;
+    }
 
     void announce() {
-        System.out.print("Coo! I am " + name + ".  I am a " + species  + ". I am " + age + " years old.");
-//        System.out.println(" My owner is " + owner.name + ".");
+
+        super.announce();
+
         if (flyTime < 2.0) {
             System.out.println("COO COO! Let me out I need to fly");
         }

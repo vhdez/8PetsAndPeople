@@ -83,20 +83,9 @@ public class PetsAndPeople {
 
 
 
-        Owner Fudayl = new Owner();
-        Fudayl.name = "Fudayl";
-        Fudayl.dogFood=15;
-        Fudayl.freeTime=2.5f;
-        Fudayl.money=30;
+        Owner Fudayl = new Owner("Fudayl", 15, 2.5f,30);
 
-        Dog dogfh = new Dog();
-        dogfh.name = "Duece";
-        dogfh.age=3;
-        dogfh.breed= "German Shepard";
-        dogfh.energy= 1f;
-        dogfh.hunger=2f;
-        dogfh.owner= Fudayl;
-
+        Dog dogfh = new Dog("Duece", "German Shepard", 3, Fudayl, 1f, 2f);
 
         Fudayl.announce();
 
@@ -107,6 +96,7 @@ public class PetsAndPeople {
         Fudayl.name = "Fudayl";
 
         Cat cathf = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
+        Fudayl.pet22=cathf;
 
 
 
@@ -150,79 +140,48 @@ public class PetsAndPeople {
 
         //making Aidan's person
 
-        Owner Roman = new Owner();
-        Roman.name = "Aida n";
-        Roman.dogFood = 60;
-        Roman.freeTime = 4.0f;
-        Roman.money = 1000;
+
+        Owner Roman = new Owner("Aidan", 60, 4.0f, 1000);
         //Aidan's bear
-        Bear myBear = new Bear();
-        myBear.name = "Big thiccy";
-        myBear.age = 4;
-        myBear.breed = "Black Bear";
-        myBear.energy = 5.0f;
-        myBear.hunger = 4.0f;
-        myBear.owner = Roman;
+        Bear myBear = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
         Roman.pet3 = myBear;
 
-        //Bear and aidan do things
-        Roman.announce();
-        Roman.walk(myBear, 2.5f);
-        Roman.feed(myBear,6f);
-
-        Dog dogAR = new Dog();
-        dogAR.name = "Snoop";
-        dogAR.age= 5;
-        dogAR.breed= "Russian Bear hunting Dog";
-        dogAR.energy= 1f;
-        dogAR.hunger=2f;
-        dogAR.owner= Roman;
+        allOfThePets[51] = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
+        Roman.pet1 =  allOfThePets[51];
 
 
         Roman.announce();
+        Roman.walk( myBear, 2.5f);
+        Roman.feed( myBear,6f);
 
 
-        Roman.walk(dogAR, 0.7f);
-        Roman.feed(dogAR, 0.3f);
+        Roman.walk( allOfThePets[51], 0.7f);
+        Roman.feed( allOfThePets[51], 0.3f);
 
         System.out.println("Bye!");
 
+        Roman.announce();
+
+
         // Ethan:
-        Owner EthanC = new Owner();
+        Owner EthanC = new Owner("Ethan Chen", 20, 3.75f, 100);
 
-        EthanC.name = "Ethan Chen";
-
-        EthanC.dogFood = 20;
         EthanC.seedsForPigeon = 100;
-        EthanC.freeTime = 3.75f;
-        EthanC.money = 100;
 
-        Dog rupertDog = new Dog();
-        rupertDog.name = "Rupert";
-        rupertDog.age = 4;
-        rupertDog.breed = "Corgi" ;
-        rupertDog.energy = 2.1f;
-        rupertDog.hunger = 0.5f;
-        rupertDog.owner = EthanC;
-        EthanC.pet1 = rupertDog;
+        allOfThePets[2] = new Dog("Rupert", "Corgi", 4, EthanC, 2.1f, 0.5f);
+        EthanC.pet1 = allOfThePets[2];
 
         EthanC.announce();
-        EthanC.walk(rupertDog, 1.1f);
-        EthanC.feed(rupertDog, 1f);
+        EthanC.walk(allOfThePets[2], 1.1f);
+        EthanC.feed(allOfThePets[2], 1f);
 
         // Pet Pigeon :D
-        Pigeon myPigeon = new Pigeon();
-        myPigeon.name = "Kevin Gertrude Bartholomew Maximus Leon III Smoo";
-        myPigeon.age = 2;
-        myPigeon.species = "Feral Pigeon";
-        myPigeon.flyTime = 0.2f;
-        myPigeon.hunger = 60f;
-        myPigeon.owner = EthanC;
-        EthanC.pet5 = myPigeon;
+        allOfThePets[3] = new Pigeon("Kevin Gertrude Bartholomew Maximus Leon III Smoo", 2, EthanC, 60f, "Feral Pigeon", 0.2f, Bella);
+        EthanC.pet5 = allOfThePets[3];
 
         EthanC.announce();
-        EthanC.fly(myPigeon, 2.3f);
-        EthanC.feed(myPigeon, 30f);
+        EthanC.fly(allOfThePets[3], 2.3f);
+        EthanC.feed(allOfThePets[3], 30f);
 
 
         // Tashon's person
