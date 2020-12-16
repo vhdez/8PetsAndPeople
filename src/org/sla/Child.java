@@ -13,9 +13,11 @@ public class Child extends Person {
     Child() {
     }
 
-    public Child(int age, float homeworkHours, float energyLevel, Dog dog, Pigeon pigeon) {
+    public Child(String name, int age, float homeworkHours, float freeTime, float energyLevel, Dog dog, Pigeon pigeon) {
+        this.name = name;
         this.age = age;
         this.homeworkHours = homeworkHours;
+        this.freeTime = freeTime;
         this.energyLevel = energyLevel;
         this.dog = dog;
         this.pigeon = pigeon;

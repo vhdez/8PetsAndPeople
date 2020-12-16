@@ -29,30 +29,22 @@ public class PetsAndPeople {
         mrHernandez.walk(allOfThePets[1], 0.7f);
         mrHernandez.feed(allOfThePets[1], 0.3f);
 
-        Child Bella = new Child();
-        Bella.name = "Bella";
-        Bella.age = 10;
-        Bella.homeworkHours = 2f;
-        Bella.freeTime = 5f;
 
+        Dog apolloDog = new Dog("Apollo", "Husky", 7, mrHernandez, 3.2f, 0.1f );
 
-        Dog apolloDog = new Dog();
-        // Assign values to all of this Dog object's fields
-        apolloDog.name = "Apollo";
-        apolloDog.age = 7;
-        apolloDog.breed = "Husky";
-        apolloDog.energy = 3.2f;
-        apolloDog.hunger = 0.1f;
-        Bella.dog = apolloDog;
-
-        Pigeon charliePigeon = new Pigeon();
+        Pigeon charliePigeon = new Pigeon("Charlie", 2, mrHernandez, 10f, "Feral Pigeon", 0.2f);
         charliePigeon.name = "Charlie";
         charliePigeon.age = 2;
         charliePigeon.species = "Feral Pigeon";
         charliePigeon.flyTime = 0.2f;
         charliePigeon.hunger = 10f;
-        Bella.pigeon = charliePigeon;
 
+
+        Child Bella = new Child("Bella", 10, 2f, 5f, 80, apolloDog, charliePigeon);
+
+
+        Bella.dog = apolloDog;
+        Bella.pigeon = charliePigeon;
         Bella.announce();
         Bella.sleep(Bella, 6f);
         Bella.walk(apolloDog, 2f, 30);
@@ -153,7 +145,7 @@ public class PetsAndPeople {
         EthanC.feed(allOfThePets[2], 1f);
 
         // Pet Pigeon :D
-        allOfThePets[3] = new Pigeon("Kevin Gertrude Bartholomew Maximus Leon III Smoo", 2, EthanC, 60f, "Feral Pigeon", 0.2f, Bella);
+        allOfThePets[3] = new Pigeon("Kevin Gertrude Bartholomew Maximus Leon III Smoo", 2, EthanC, 60f, "Feral Pigeon", 0.2f);
         EthanC.pet5 = allOfThePets[3];
 
         EthanC.announce();

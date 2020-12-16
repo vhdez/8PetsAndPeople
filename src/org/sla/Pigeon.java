@@ -11,14 +11,14 @@ public class Pigeon extends Pet  {
     Pigeon() {
     }
 
-    public Pigeon(String name, int age,  Owner owner,  float hunger, String species, float flyTime, Child child) {
+    public Pigeon(String name, int age,  Owner owner,  float hunger, String species, float flyTime) {
         this.name = name;
         this.age = age;
         this.owner = owner;
         this.hunger = hunger;
         this.species = species;
         this.flyTime = flyTime;
-        this.child = child;
+
     }
 
     void announce() {
