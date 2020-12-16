@@ -15,7 +15,7 @@ public class Owner {
     // Object can have multiple classes (poly morphism) subclass/superclass
     Pet pet1;
     Pet pet2;
-    Bear pet3;
+    Pet pet3;
     Pet pet5;
     Cat2 pet6;
     SeaBass pet10;

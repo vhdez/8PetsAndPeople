@@ -143,16 +143,16 @@ public class PetsAndPeople {
 
         Owner Roman = new Owner("Aidan", 60, 4.0f, 1000);
         //Aidan's bear
-        Bear myBear = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
-        Roman.pet3 = myBear;
+        allOfThePets[50] = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
+        Roman.pet3 = allOfThePets[50];
 
         allOfThePets[51] = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
         Roman.pet1 =  allOfThePets[51];
 
 
         Roman.announce();
-        Roman.walk( myBear, 2.5f);
-        Roman.feed( myBear,6f);
+        Roman.walk( allOfThePets[50], 2.5f);
+        Roman.feed( allOfThePets[50],6f);
 
 
         Roman.walk( allOfThePets[51], 0.7f);
