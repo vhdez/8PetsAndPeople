@@ -59,30 +59,16 @@ public class PetsAndPeople {
         Bella.fly(charliePigeon, 2.3f, 10);
 
         //making Matthew's person
-        Owner Matthew = new Owner();
-        Matthew.name = "Madeleine Butterfly";
-        Matthew.dogFood = 10f;
-        Matthew.freeTime = 9.0f;
-        Matthew.money = 5;
+        Owner Matthew = new Owner("Madeleine Butterfly", 10f, 9.0f, 20);
         //Matthew's dog
-        Dog dogMN = new Dog();
-        dogMN.name = "Barko Diaz";
-        dogMN.age = 21;
-        dogMN.breed = "laser puppy";
-
-        dogMN.hunger = .5f;
-        dogMN.owner = Matthew;
-        Matthew.pet1 = dogMN;
+        Dog dogMN = new Dog("Barko Diaz", "laser puppy", 21, Matthew, 2f, .5f);
         //Matthew's Seabass
-        SeaBass basspro = new SeaBass();
-        basspro.name = "Bass Pro";
-        basspro.breed = "fish";
-        basspro.owner = Matthew;
-        basspro.age = 1;
-        basspro.energy = 5f;
-        basspro.hunger = 2f;
+        SeaBass basspro = new SeaBass("Bass Pro", "fish", 1, Matthew, 5f, 2f);
+        //making Korra
+        WaterBender Avatar2 = new WaterBender("Korra",16f);
+        Avatar2.water1 = basspro;
         Matthew.pet10 = basspro;
-
+        Matthew.pet1 = dogMN;
         //MN & pets interacting
         Matthew.announce();
         dogMN.announce();
@@ -91,13 +77,6 @@ public class PetsAndPeople {
         Matthew.feed(dogMN,5f);
         Matthew.feed(basspro, 3f);
         Matthew.watch(basspro, 2f);
-
-        //making Korra
-        WaterBender Avatar2 = new WaterBender();
-        Avatar2.name = "Korra";
-        Avatar2.freeTime = 16f;
-        Avatar2.water1 = basspro;
-
         //Korra and SeaBass
         Avatar2.announce();
         Avatar2.train(basspro, 10f);

@@ -5,6 +5,17 @@ public class SeaBass extends Pet {
     WaterBender trainer;
     float energy;
 
+    public SeaBass(String name, String breed, int age, Owner owner, float energy, float hunger) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
+
+
+
     // METHODS
     void announce() {
         System.out.print("blub!");
