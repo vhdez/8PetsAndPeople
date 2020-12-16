@@ -214,7 +214,6 @@ public class PetsAndPeople {
         Pol.hunger = 3;
         Pol.owner = Jojo;
         Jojo.pet20 = Pol;
-
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
