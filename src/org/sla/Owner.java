@@ -233,6 +233,5 @@ public class Owner extends Person {
         System.out.println("");
     }
 
-    //void walk(Gator gator, float)
 
 }
