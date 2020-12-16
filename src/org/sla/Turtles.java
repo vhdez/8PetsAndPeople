@@ -2,14 +2,17 @@ package org.sla;
 
 // Alonso's GLORIOUS Turtle
 
-public class Turtles {
+public class Turtles extends Pet{
 
-    // FIELDS
-    String name;
-    int age;
-    Owner owner;
     float energy;
-    float hunger;
+
+    public Turtles(String name, int age, Owner owner, float energy, float hunger) {
+        this.name = name;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
 
     // METHODS
     void announce() {
