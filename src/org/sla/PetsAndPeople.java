@@ -96,6 +96,7 @@ public class PetsAndPeople {
         Fudayl.name = "Fudayl";
 
         Cat cathf = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
+        Fudayl.pet22=cathf;
 
 
 
