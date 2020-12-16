@@ -9,11 +9,12 @@ public class Pet {
     Owner owner;
     float hunger;
 
+
     // CONSTRUCTORS
 
     // METHODS (what all pets do)
     void announce() {
-        System.out.print("Attention! I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
+        System.out.println("  I'm " + name +".  I'm a " + age + " year old " + breed + ".  ");
         // Notice that dog can get owner's name from the Owner object's field
         // System.out.println("My owner is " + owner.name + ".");
         if (hunger > 2.0) {

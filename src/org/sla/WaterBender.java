@@ -7,6 +7,13 @@ public class WaterBender {
     float freeTime;
     SeaBass water1;
 
+    WaterBender(String avatarName, float timeAvailable) {
+        name = avatarName;
+        freeTime = timeAvailable;
+        //water1 = fish;
+    }
+
+
     // METHODS (what all pet owners do)
     void announce() {
         System.out.print("The name's " + name +".  ");

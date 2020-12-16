@@ -1,23 +1,27 @@
 package org.sla;
 
-public class SeaBass {
+public class SeaBass extends Pet {
     // FIELDS
-    String name;
-    int age;
-    Owner owner;
     WaterBender trainer;
     float energy;
-    float hunger;
+
+    public SeaBass(String name, String breed, int age, Owner owner, float energy, float hunger) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.owner = owner;
+        this.energy = energy;
+        this.hunger = hunger;
+    }
+
+
 
     // METHODS
     void announce() {
-        System.out.print("blub! I'm  " + name + ".  ");
-        System.out.println("My owner is " + owner.name + ".");
+        System.out.print("blub!");
+        super.announce();
         if (energy > 5.0) {
             System.out.println("splish splash");
-        }
-        if (hunger > 1.0) {
-            System.out.println("blub! blub!");
         }
     }
 
