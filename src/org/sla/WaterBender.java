@@ -1,10 +1,8 @@
 package org.sla;
 
-public class WaterBender {
+public class WaterBender extends Person{
 
     // FIELDS (the data that describes any pet owner)
-    String name;
-    float freeTime;
     SeaBass water1;
 
     WaterBender(String avatarName, float timeAvailable) {

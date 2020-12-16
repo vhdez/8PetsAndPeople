@@ -96,6 +96,7 @@ public class PetsAndPeople {
         Fudayl.name = "Fudayl";
 
         Cat cathf = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
+        Fudayl.pet22=cathf;
 
 
 
@@ -142,20 +143,20 @@ public class PetsAndPeople {
 
         Owner Roman = new Owner("Aidan", 60, 4.0f, 1000);
         //Aidan's bear
-        Bear myBear = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
-        Roman.pet3 = myBear;
+        allOfThePets[50] = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
+        Roman.pet3 = allOfThePets[50];
 
-        Dog dogAR = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
-        Roman.pet1 = dogAR;
+        allOfThePets[51] = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
+        Roman.pet1 =  allOfThePets[51];
 
 
         Roman.announce();
-        Roman.walk(myBear, 2.5f);
-        Roman.feed(myBear,6f);
+        Roman.walk( allOfThePets[50], 2.5f);
+        Roman.feed( allOfThePets[50],6f);
 
 
-        Roman.walk(dogAR, 0.7f);
-        Roman.feed(dogAR, 0.3f);
+        Roman.walk( allOfThePets[51], 0.7f);
+        Roman.feed( allOfThePets[51], 0.3f);
 
         System.out.println("Bye!");
 
@@ -195,28 +196,28 @@ public class PetsAndPeople {
 
 
         //Cia's Person
-        Owner Alycia = new Owner();
-        Alycia.name = "Jensen";
-        Alycia.catFood = 15;
-        Alycia.freeTime = 5.0f;
-        Alycia.money = 20;
+        Owner Alycia = new Owner("Jensen", 15, 5.0f, 20);
+
+        //Cia's Dog
+        allOfThePets[2] = new Dog("Steve", "Golden Retriever", 1, Alycia, 2f, 1f);
+        Alycia.pet2 = allOfThePets[2];
+
+        Alycia.announce();
+        Alycia.walk(allOfThePets[2], 2f);
+        Alycia.feed(allOfThePets[2], 1f);
+
         //Cia's cat
-        Cat2 catAK = new Cat2();
-        catAK.name = "Bucky";
-        catAK.age = 2;
-        catAK.breed = "Japanese Bobtail";
-        catAK.energy = 10f;
-        catAK.hunger = .7f;
-        catAK.owner = Alycia;
-        Alycia.pet6 = catAK;
+        allOfThePets[15] = new Cat2("Bucky", "Japanese Bobtail", 2, Alycia, 1f, 0.7f);
+        Alycia.pet6 = allOfThePets[15];
+
+        //Cia's announce
+        Alycia.announce();
+        Alycia.walk(allOfThePets[15], 1f);
+        Alycia.feed(allOfThePets[15], .7f);
+
 
         //Alonso's Owner
-        Owner Jojo = new Owner();
-        Jojo.name = "Jojo";
-        Jojo.dogFood = 7;
-        Jojo.turtleFood = 10;
-        Jojo.freeTime = 2.0f;
-        Jojo.money = 14;
+        Owner Jojo = new Owner("Jojo, the Bizarre", 7, 2.0f, 14);
 
         //Alonso's Dog
         Dog Iggy = new Dog();
@@ -229,20 +230,15 @@ public class PetsAndPeople {
         Jojo.pet1 = Iggy;
 
         //Alonso's Turtle
-        Turtles Pol = new Turtles();
-        Pol.name = "Iggy";
-        Pol.age = 3;
-        Pol.energy = 2f;
-        Pol.hunger = 3;
-        Pol.owner = Jojo;
-        Jojo.pet20 = Pol;
+        Turtles Pol = new Turtles("Pol", 3, Jojo, 2f, 3);
+
 
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
         Jojo.feed(Pol, 3);
 
-        Alycia.pet6 = catAK;
+
         // Niyat has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
