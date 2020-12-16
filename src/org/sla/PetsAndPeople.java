@@ -145,17 +145,17 @@ public class PetsAndPeople {
         Bear myBear = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
         Roman.pet3 = myBear;
 
-        Dog dogAR = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
-        Roman.pet1 = dogAR;
+        allOfThePets[51] = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
+        Roman.pet1 =  allOfThePets[51];
 
 
         Roman.announce();
-        Roman.walk(myBear, 2.5f);
-        Roman.feed(myBear,6f);
+        Roman.walk( myBear, 2.5f);
+        Roman.feed( myBear,6f);
 
 
-        Roman.walk(dogAR, 0.7f);
-        Roman.feed(dogAR, 0.3f);
+        Roman.walk( allOfThePets[51], 0.7f);
+        Roman.feed( allOfThePets[51], 0.3f);
 
         System.out.println("Bye!");
 

@@ -4,9 +4,6 @@ public class Bear extends Pet {
     float energy;
     float hunger;
 
-    Bear() {
-
-    }
 
     public Bear(String name, String breed, int age, Owner owner, float energy, float hunger) {
         this.name = name;
