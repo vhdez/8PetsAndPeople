@@ -1,6 +1,6 @@
 package org.sla;
 
-public class DragonTamer {
+public class DragonTamer extends Person{
 
     String name;
     float Meat;
