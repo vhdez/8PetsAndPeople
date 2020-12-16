@@ -173,20 +173,23 @@ public class PetsAndPeople {
 
 
         //Cia's Person
-        Owner Alycia = new Owner();
-        Alycia.name = "Jensen";
-        Alycia.catFood = 15;
-        Alycia.freeTime = 5.0f;
-        Alycia.money = 20;
-        //Cia's cat
-        Cat2 catAK = new Cat2();
-        catAK.name = "Bucky";
-        catAK.age = 2;
-        catAK.breed = "Japanese Bobtail";
-        catAK.energy = 10f;
-        catAK.hunger = .7f;
-        catAK.owner = Alycia;
-        Alycia.pet6 = catAK;
+        Owner Alycia = new Owner("Jensen", 15, 5.0f, 20);
+
+        //Cia's Dog
+        allOfThePets[2] = new Dog("Steve", "Golden Retriever", 1, Alycia, 2f, 1f);
+        Alycia.pet2 = allOfThePets[2];
+
+        Alycia.announce();
+        Alycia.walk(allOfThePets[2], 2f);
+        Alycia.feed(allOfThePets[2], 1f);
+
+        allOfThePets[15] = new Cat2("Bucky", "Japanese Bobtail", 2, Alycia, 1f, 0.7f);
+        Alycia.pet6 = allOfThePets[15];
+
+        //Cia's announce
+        Alycia.announce();
+        Alycia.walk(allOfThePets[15], 1f);
+        Alycia.feed(allOfThePets[15], .7f);
 
         //Alonso's Owner
         Owner Jojo = new Owner();
