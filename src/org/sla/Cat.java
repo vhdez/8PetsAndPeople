@@ -1,12 +1,8 @@
 package org.sla;
 
-public class Cat {
-    String name;
-    String breed;
-    int age;
-    Owner owner;
+public class Cat extends Pet {
+
     float energy;
-    float hunger;
 
     public Cat(String name, String breed, int age, Owner owner, float energy, float hunger) {
         this.name = name;

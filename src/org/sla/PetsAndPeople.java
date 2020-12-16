@@ -76,20 +76,22 @@ public class PetsAndPeople {
 
 
         Owner Jacob = new Owner("Jacob", 2f, 5f, 99999999);
+
         Owner Fudayl = new Owner("Fudayl", 15, 2.5f,30);
 
-        Dog dogfh = new Dog("Duece", "German Shepard", 3, Fudayl, 1f, 2f);
+        allOfThePets[2] = new Dog("Duece", "German Shepard", 3, Fudayl, 1f, 2f);
+        Fudayl.pet2=allOfThePets[2];
 
         Fudayl.announce();
 
 
-        Fudayl.walk(dogfh, 0.7f);
-        Fudayl.feed(dogfh, 0.3f);
+        Fudayl.walk(Fudayl.pet2, 0.7f);
+        Fudayl.feed(Fudayl.pet2, 0.3f);
 
         Fudayl.name = "Fudayl";
 
-        Cat cathf = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
-        Fudayl.pet22=cathf;
+       allOfThePets[22] = new Cat("Kodak","Black Cat",2, Fudayl, 1f, 2f);
+        Fudayl.pet22=allOfThePets[22];
 
 
         Dog Toby = new Dog("Toby", "Shih Tzu", 9, Jacob, 2f, 0f);

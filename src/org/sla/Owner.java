@@ -20,7 +20,7 @@ public class Owner extends Person {
     SeaBass pet10;
     Gator pet11;
     Turtles pet20;
-    Cat pet22;
+    Pet pet22;
 
     // CONSTRUCTORS
     Owner() {
