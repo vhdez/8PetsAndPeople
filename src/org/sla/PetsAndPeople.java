@@ -189,12 +189,7 @@ public class PetsAndPeople {
         Alycia.pet6 = catAK;
 
         //Alonso's Owner
-        Owner Jojo = new Owner();
-        Jojo.name = "Jojo";
-        Jojo.dogFood = 7;
-        Jojo.turtleFood = 10;
-        Jojo.freeTime = 2.0f;
-        Jojo.money = 14;
+        Owner Jojo = new Owner("Jojo, the Bizarre", 7, 2.0f, 14);
 
         //Alonso's Dog
         Dog Iggy = new Dog();
@@ -207,13 +202,8 @@ public class PetsAndPeople {
         Jojo.pet1 = Iggy;
 
         //Alonso's Turtle
-        Turtles Pol = new Turtles();
-        Pol.name = "Iggy";
-        Pol.age = 3;
-        Pol.energy = 2f;
-        Pol.hunger = 3;
-        Pol.owner = Jojo;
-        Jojo.pet20 = Pol;
+        Turtles Pol = new Turtles("Pol", 3, Jojo, 2f, 3);
+
         //Alonso's Announce
         Jojo.announce();
         Jojo.feed(Iggy, 2);
