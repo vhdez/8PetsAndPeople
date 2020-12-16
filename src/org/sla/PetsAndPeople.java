@@ -204,7 +204,7 @@ public class PetsAndPeople {
         Jojo.feed(Iggy, 2);
         Jojo.feed(Pol, 3);
 
-        Alycia.pet6 = catAK;
+
         // Niyat has 2 dogs!
         // FIRST: Assign values to FIELDS
         // Construct an Owner object to represent Mr. Hernandez
