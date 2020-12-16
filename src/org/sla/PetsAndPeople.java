@@ -103,20 +103,9 @@ public class PetsAndPeople {
 
 
 
-        Owner Fudayl = new Owner();
-        Fudayl.name = "Fudayl";
-        Fudayl.dogFood=15;
-        Fudayl.freeTime=2.5f;
-        Fudayl.money=30;
+        Owner Fudayl = new Owner("Fudayl", 15, 2.5f,30);
 
-        Dog dogfh = new Dog();
-        dogfh.name = "Duece";
-        dogfh.age=3;
-        dogfh.breed= "German Shepard";
-        dogfh.energy= 1f;
-        dogfh.hunger=2f;
-        dogfh.owner= Fudayl;
-
+        Dog dogfh = new Dog("Duece", "German Shepard", 3, Fudayl, 1f, 2f);
 
         Fudayl.announce();
 
