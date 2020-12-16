@@ -1,21 +1,33 @@
 package org.sla;
 
-public class Child {
+public class Child extends Person {
 
-    String name;
+
     int age;
     float homeworkHours;
-    float freeTime;
+
     float energyLevel;
     Dog dog;
     Pigeon pigeon;
 
+    Child() {
+    }
+
+    public Child(int age, float homeworkHours, float energyLevel, Dog dog, Pigeon pigeon) {
+        this.age = age;
+        this.homeworkHours = homeworkHours;
+        this.energyLevel = energyLevel;
+        this.dog = dog;
+        this.pigeon = pigeon;
+    }
 
     void announce() {
-        System.out.print("Hi!  I'm " + name + ".  ");
+
+        super.announce();
+
         System.out.print("I am " + age + " years old. ");
         System.out.print("I have " + homeworkHours + " hours worth of homework to do.  ");
-        System.out.print("I have " + freeTime + " hours of free time left today.  ");
+
 
         if (dog != null) {
             System.out.println("");

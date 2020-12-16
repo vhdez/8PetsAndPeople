@@ -2,15 +2,14 @@ package org.sla;
 
 // Author: Mr. Hernandez
 
-public class Owner {
+public class Owner extends Person {
 
     // FIELDS (the data that describes any pet owner)
-    String name;
+
     float dogFood;
     float catFood;
     float seedsForPigeon;
     float turtleFood;
-    float freeTime;
     float money;
     // Object can have multiple classes (poly morphism) subclass/superclass
     Pet pet1;
@@ -36,9 +35,10 @@ public class Owner {
 
     // METHODS (what all pet owners do)
     void announce() {
-        System.out.print("Hi!  I'm " + name +".  ");
+
+        super.announce();
+
         System.out.print("I have " + dogFood + " pounds of dog food left.  ");
-        System.out.print("I have " + freeTime + " hours of free time left today.  ");
         System.out.println("I have $" + money + " to spend on dog food.");
 
         // Check if pet1 has a value before trying to announce a non-existent Dog
