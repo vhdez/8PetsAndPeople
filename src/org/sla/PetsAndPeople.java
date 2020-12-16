@@ -150,42 +150,28 @@ public class PetsAndPeople {
 
         //making Aidan's person
 
-        Owner Roman = new Owner();
-        Roman.name = "Aida n";
-        Roman.dogFood = 60;
-        Roman.freeTime = 4.0f;
-        Roman.money = 1000;
+
+        Owner Roman = new Owner("Aidan", 60, 4.0f, 1000);
         //Aidan's bear
-        Bear myBear = new Bear();
-        myBear.name = "Big thiccy";
-        myBear.age = 4;
-        myBear.breed = "Black Bear";
-        myBear.energy = 5.0f;
-        myBear.hunger = 4.0f;
-        myBear.owner = Roman;
+        Bear myBear = new Bear("Big thiccy", "Black Bear", 4, Roman, 5.0f, 4.0f);
         Roman.pet3 = myBear;
 
-        //Bear and aidan do things
+        Dog dogAR = new Dog("Snoop", "Russian Bear Hunting Dog", 5, Roman, 1f, 2f);
+        Roman.pet1 = dogAR;
+
+
         Roman.announce();
         Roman.walk(myBear, 2.5f);
         Roman.feed(myBear,6f);
-
-        Dog dogAR = new Dog();
-        dogAR.name = "Snoop";
-        dogAR.age= 5;
-        dogAR.breed= "Russian Bear hunting Dog";
-        dogAR.energy= 1f;
-        dogAR.hunger=2f;
-        dogAR.owner= Roman;
-
-
-        Roman.announce();
 
 
         Roman.walk(dogAR, 0.7f);
         Roman.feed(dogAR, 0.3f);
 
         System.out.println("Bye!");
+
+        Roman.announce();
+
 
         // Ethan:
         Owner EthanC = new Owner("Ethan Chen", 20, 3.75f, 100);
