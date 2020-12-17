@@ -1,8 +1,6 @@
 package org.sla;
 
-public class Gator {
-    public Object announce;
-
-    public void announce() {
+public class Gator extends Pet {
+    public Gator() {
     }
 }

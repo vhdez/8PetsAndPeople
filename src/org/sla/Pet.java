@@ -9,7 +9,6 @@ public class Pet {
     Owner owner;
     float hunger;
 
-
     // CONSTRUCTORS
 
     // METHODS (what all pets do)

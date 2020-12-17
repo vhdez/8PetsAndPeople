@@ -8,11 +8,6 @@ public class Dog extends Pet {
     float energy;
 
     // CONSTRUCTORS
-
-    Dog() {
-
-    }
-
     public Dog(String name, String breed, int age, Owner owner, float energy, float hunger) {
         this.name = name;
         this.breed = breed;

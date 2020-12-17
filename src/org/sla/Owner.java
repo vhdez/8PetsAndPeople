@@ -19,13 +19,10 @@ public class Owner extends Person {
     Pet pet6;
     SeaBass pet10;
     Gator pet11;
-    Turtles pet20;
+    Turtle pet20;
     Pet pet22;
 
     // CONSTRUCTORS
-    Owner() {
-    }
-
     Owner(String myName, float realDogFoodAmount, float timeAvailable, float cashMoney) {
         name = myName;
         dogFood = realDogFoodAmount;
@@ -221,14 +218,14 @@ public class Owner extends Person {
         System.out.println("  ");
     }
 
-    void feed(Turtles turtles, float foodAmount) {
+    void feed(Turtle turtle, float foodAmount) {
         if (foodAmount < turtleFood) {
 
             turtleFood = turtleFood - foodAmount;
-            System.out.println("Owner " + name + " feeds " + turtles.name + " " + foodAmount + " grams.");
-            turtles.eat(foodAmount);
+            System.out.println("Owner " + name + " feeds " + turtle.name + " " + foodAmount + " grams.");
+            turtle.eat(foodAmount);
         } else {
-            System.out.println("Owner " + name + " can't feed " + turtles.name + " " + foodAmount + " grams.");
+            System.out.println("Owner " + name + " can't feed " + turtle.name + " " + foodAmount + " grams.");
         }
         System.out.println("");
     }

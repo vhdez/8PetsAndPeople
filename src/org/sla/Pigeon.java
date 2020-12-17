@@ -7,10 +7,6 @@ public class Pigeon extends Pet  {
     Child child;
 
 // CONSTRUCTORS
-
-    Pigeon() {
-    }
-
     public Pigeon(String name, int age,  Owner owner,  float hunger, String species, float flyTime) {
         this.name = name;
         this.age = age;
@@ -18,7 +14,6 @@ public class Pigeon extends Pet  {
         this.hunger = hunger;
         this.species = species;
         this.flyTime = flyTime;
-
     }
 
     void announce() {
